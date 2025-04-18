@@ -122,9 +122,9 @@ body {
     }
 
     .about-us {
-        text-align: center;
+        text-align: justify;
         font-size: 20px;
-        margin: 0 150px 0 150px;
+        width: 700px;
     }
 
     /* our games */
@@ -248,8 +248,8 @@ body {
     }
 
     .member-about {
-        text-align: center;
-        margin: 0 200px 0 200px;
+        text-align: justify;
+        width: 700px;
     }
 
     /* contact */
