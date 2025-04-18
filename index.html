@@ -18,8 +18,22 @@
             <a href="#section3">Our Games</a>
             <a href="#section4">Our Team</a>
             <a href="#section5">Contact</a>
+            
+        </div>
+        <div class="hamburger-container" onclick="toggleSidebar()">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
         </div>
     </nav>
+    <!-- sidebar -->
+    <div class="sidebar" id="sidebar">
+        <ul class="sidebar-link"><a href="#section1">Home</a></ul>
+        <ul class="sidebar-link"><a href="#section2">About us</a></ul>
+        <ul class="sidebar-link"><a href="#section3">Our Games</a></ul>
+        <ul class="sidebar-link"><a href="#section4">Our Team</a></ul>
+        <ul class="sidebar-link"><a href="#section5">Contact</a></ul>
+    </div>
     <!-- content -->
     <div class="content">
         <!-- home page -->
@@ -114,8 +128,17 @@
     </div>
     <footer>
         <p>© 2025 The Interastral Studio. All rights reserved</p>
-        <a href="https://www.instagram.com/the_interastral_studio/">Instagram</a>
-        <a href="mailto:dzakialtoriq4@gmail.com">Email us</a>
+        <div class="option-container">
+            <a href="https://www.instagram.com/the_interastral_studio/">Instagram</a>
+            <a href="mailto:dzakialtoriq4@gmail.com">Email us</a>
+        </div>
     </footer>
+    <script>
+        // toggle sidebar
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
