@@ -1,0 +1,604 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* Desktop screen */
+@media screen and (min-width: 1024px) {
+
+    /* navbar */
+    nav {
+        background-color: black;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .logo {
+        width: auto;
+        height: 100px;
+        margin-left: 10px;
+    }
+
+    .menu {
+        margin-left: 15px;
+    }
+
+    .menu a {
+        position: relative;
+        color: white;
+        text-decoration: none;
+        margin-right: 25px;
+    }
+
+    .menu a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease-out;
+    }
+
+    .menu a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    /* home page */
+    .tagline-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 100px);
+    }
+
+    .tagline {
+        font-weight: normal;
+        font-size: 60px;
+        text-align: center;
+        margin: 0 150px 0 150px;
+    }
+
+    .tagline-container p {
+        text-align: center;
+    }
+
+    /* about us */
+    .about-us-title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 100px);
+    }
+
+    .about-us-title {
+        font-size: 60px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .about-us-line {
+        display: block;
+        background-color: white;
+        width: 280px;
+        height: 5px;
+    }
+
+    .about-us-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .about-us {
+        text-align: center;
+        font-size: 20px;
+        margin: 0 150px 0 150px;
+    }
+
+    /* our games */
+    .our-games-title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 100px);
+    }
+
+    .our-games-title {
+        font-size: 60px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .our-games-line {
+        display: block;
+        background-color: white;
+        width: 325px;
+        height: 5px;
+    }
+
+    .game-container-1st {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .game-container-2nd {
+        width: 70%;
+        display: flex;
+    }
+
+    .game-cover {
+        width: auto;
+        height: 500px;
+    }
+
+    .game-information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 500px;
+        margin-left: 30px;
+    }
+
+    .game-title {
+        font-size: 50px;
+        margin: 0 0 5px 0;
+        font-weight: normal;
+    }
+
+    .game-line {
+        display: block;
+        background-color: white;
+        width: 325px;
+        height: 5px;
+    }
+
+    .release-date {
+        margin: 10px 0 10px 0;
+    }
+
+    .platforms-list {
+        margin: 0;
+    }
+
+    /* our team */
+    .our-team-title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 100px);
+    }
+
+    .our-team-title {
+        font-size: 60px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .our-team-line {
+        display: block;
+        background-color: white;
+        width: 280px;
+        height: 5px;
+    }
+
+    .member-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .member-name {
+        font-size: 65px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .member-name-line {
+        display: block;
+        background-color: white;
+        width: 250px;
+        height: 5px;
+    }
+
+    .member-position {
+        font-size: 20px;
+        margin: 10px 0 20px 0;
+    }
+
+    .member-about {
+        text-align: center;
+        margin: 0 200px 0 200px;
+    }
+
+    /* contact */
+    .contact-title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 100px);
+    }
+
+    .contact-title {
+        font-size: 60px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .contact-title-line {
+        display: block;
+        background-color: white;
+        width: 220px;
+        height: 5px;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .contact-container p {
+        margin: 5px 0 5px 0;
+        font-size: 22.5px;
+    }
+
+    /* footer */
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+
+    footer p {
+        margin-right: 25px;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+        margin: 0 5px 0 5px;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* tablet screen */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* navbar */
+    nav {
+        background-color: black;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .logo {
+        width: auto;
+        height: 100px;
+        margin-left: 10px;
+    }
+
+    .menu {
+        margin-left: 15px;
+    }
+
+    .menu a {
+        position: relative;
+        color: white;
+        text-decoration: none;
+        margin-right: 25px;
+    }
+
+    .menu a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease-out;
+    }
+
+    .menu a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    /* home page */
+    .tagline-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 100px);
+    }
+
+    .tagline {
+        font-weight: normal;
+        font-size: 60px;
+        text-align: center;
+        margin: 0 50px 0 50px;
+    }
+
+    .tagline-container p {
+        text-align: center;
+    }
+
+    /* about us */
+    .about-us-title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 100px);
+    }
+
+    .about-us-title {
+        font-size: 60px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .about-us-line {
+        display: block;
+        background-color: white;
+        width: 280px;
+        height: 5px;
+    }
+
+    .about-us-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .about-us {
+        text-align: center;
+        font-size: 20px;
+        margin: 0 50px 0 50px;
+    }
+
+    /* our games */
+    .our-games-title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 100px);
+    }
+
+    .our-games-title {
+        font-size: 60px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .our-games-line {
+        display: block;
+        background-color: white;
+        width: 325px;
+        height: 5px;
+    }
+
+    .game-container-1st {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .game-container-2nd {
+        width: 100%;
+        display: flex;
+        padding: 0 50px 0 50px;
+    }
+
+    .game-cover {
+        width: auto;
+        height: 500px;
+    }
+
+    .game-information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 500px;
+        margin-left: 30px;
+    }
+
+    .game-title {
+        font-size: 50px;
+        margin: 0 0 5px 0;
+        font-weight: normal;
+    }
+
+    .game-line {
+        display: block;
+        background-color: white;
+        width: 325px;
+        height: 5px;
+    }
+
+    .release-date {
+        margin: 10px 0 10px 0;
+    }
+
+    .platforms-list {
+        margin: 0;
+    }
+
+    /* our team */
+    .our-team-title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 100px);
+    }
+
+    .our-team-title {
+        font-size: 60px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .our-team-line {
+        display: block;
+        background-color: white;
+        width: 280px;
+        height: 5px;
+    }
+
+    .member-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .member-name {
+        font-size: 65px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .member-name-line {
+        display: block;
+        background-color: white;
+        width: 250px;
+        height: 5px;
+    }
+
+    .member-position {
+        font-size: 20px;
+        margin: 10px 0 20px 0;
+    }
+
+    .member-about {
+        text-align: center;
+        margin: 0 75px 0 75px;
+    }
+
+    /* contact */
+    .contact-title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 100px);
+    }
+
+    .contact-title {
+        font-size: 60px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .contact-title-line {
+        display: block;
+        background-color: white;
+        width: 220px;
+        height: 5px;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .contact-container p {
+        margin: 5px 0 5px 0;
+        font-size: 22.5px;
+    }
+
+    /* footer */
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+
+    footer p {
+        margin-right: 25px;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+        margin: 0 5px 0 5px;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* phone screen */
+@media screen and (max-width: 767px) {
+
+}
