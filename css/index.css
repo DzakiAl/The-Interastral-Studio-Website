@@ -424,7 +424,7 @@ body {
     }
 
     .about-us {
-        text-align: center;
+        text-align: justify;
         font-size: 20px;
         margin: 0 50px 0 50px;
     }
@@ -550,7 +550,7 @@ body {
     }
 
     .member-about {
-        text-align: center;
+        text-align: justify;
         margin: 0 75px 0 75px;
     }
 
@@ -734,7 +734,7 @@ body {
     }
 
     .about-us {
-        text-align: center;
+        text-align: justify;
         font-size: 15px;
         margin: 0 50px 0 50px;
     }
@@ -861,7 +861,7 @@ body {
     }
 
     .member-about {
-        text-align: center;
+        text-align: justify;
         font-size: 15px;
         margin: 0 25px 0 25px;
     }
