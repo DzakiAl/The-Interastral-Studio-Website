@@ -2,142 +2,121 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to The Interastral Studio</title>
-    <link rel="icon" type="image/x-icon" href="asset/favicon.png">
-    <link rel="stylesheet" href="css/index.css">
+    <title>The Interastral Studio</title>
+    <link rel="icon" href="assets/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!-- navbar -->
+    <!-- Navbar Start -->
     <nav>
-        <a href="">
-            <img src="asset/The Interastral Studio Logo (White).png" alt="The Interastral Studio's Logo" class="logo">
-        </a>
+        <a href=""><img src="assets/logo.png" alt="The Interastral Studio's Logo" class="logo"></a>
         <div class="menu">
             <a href="#home">Home</a>
-            <a href="#about_us">About Us</a>
-            <a href="#our_games">Our Games</a>
-            <a href="#our_team">Our Team</a>
-            <a href="#contact">Contact</a>
-
+            <a href="#about">About Us</a>
+            <a href="#our-games">Our Games</a>
+            <a href="#our-team">Our Team</a>
         </div>
-        <div class="hamburger-container" onclick="toggleSidebar()">
-            <div class="hamburger"></div>
-            <div class="hamburger"></div>
-            <div class="hamburger"></div>
-        </div>
+        <a href="#" id="hamburger-menu"><i class="fa fa-bars"></i></a>
     </nav>
-    <!-- sidebar -->
-    <div class="sidebar" id="sidebar">
-        <ul class="sidebar-link"><a href="#home">Home</a></ul>
-        <ul class="sidebar-link"><a href="#about_us">About us</a></ul>
-        <ul class="sidebar-link"><a href="#our_games">Our Games</a></ul>
-        <ul class="sidebar-link"><a href="#our_team">Our Team</a></ul>
-        <ul class="sidebar-link"><a href="#contact">Contact</a></ul>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <div class="tagline-container" id="home">
+        <h1 class="tagline">
+            "Crafting immersive worlds that linger beyond the stars."
+        </h1>
     </div>
-    <!-- content -->
-    <div class="content">
-        <!-- home page -->
-        <div class="tagline-container" id="home">
-            <h1 class="tagline">
-                "Crafting immersive worlds that linger beyond the stars."
-            </h1>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <div class="about-container" id="about">
+        <h2 class="about-title">About Us</h2>
+        <p>
+            The Interastral Studio is an independent game studio founded with a passion for 
+            storytelling and creativity. We focus on developing story-driven games that aim 
+            to connect with players on a deeper level through immersive narratives and engaging 
+            experiences.
+            <br><br>
+            Our goal is to grow into a successful studio that values creativity, quality, and 
+            community feedback. While we're just getting started, we're committed to building 
+            games that leave a lasting impact.
+            <br><br>
+            This is where our journey begin and we're excited for what lies ahead.
+        </p>
+    </div>
+    <!-- About Section End -->
+
+    <!-- Games Section Start -->
+    <div class="our-games-container" id="our-games">
+        <h2 class="our-games-title">Our Games</h2>
+        <div class="game-container">
+            <div class="game-cover"></div>
+            <div class="game-information">
+                <h1 class="game-title">Project Delta</h1>
+                <table>
+                    <tr>
+                        <td>Release Date</td>
+                        <td> : Coming Soon </td>
+                    </tr>
+                    <tr>
+                        <td>Platforms</td>
+                        <td> : Windows </td>
+                    </tr>
+                </table>
+                <p class="game-desc">
+                    Project Delta is a story-driven game currently in development by The 
+                    Interastral Studio. Built with a focus on immersive gameplay and polished 
+                    design, the project aims to deliver a high-quality experience that 
+                    highlights creativity, atmosphere, and attention to detail.
+                    <br><br>
+                    Our goal with Project Delta is to push the boundaries of indie game 
+                    development by combining engaging mechanics with a strong visual and audio 
+                    identity. While still in development, the project reflects our studio’s 
+                    commitment to delivering meaningful and memorable games.
+                </p>
+            </div>
         </div>
-        <!-- about us -->
-        <div class="about-us-title-container" id="about_us">
-            <h1 class="about-us-title">
-                About Us
-            </h1>
-            <div class="about-us-line"></div>
-        </div>
-        <div class="about-us-container">
-            <p class="about-us">
-                The Interastral Studio is an independent game studio founded with a passion for storytelling 
-                and creativity. We focus on developing story-driven games that aim to connect with players 
-                on a deeper level through immersive narratives and engaging experiences.
-                <br><br>
-                Our goal is to grow into a successful studio that values creativity, quality, and community 
-                feedback. While we're just getting started, we're committed to building games that leave a 
-                lasting impact.
-                <br><br>
-                This is where our journey begin and we're excited for what lies ahead.
-            </p>
-        </div>
-        <!-- our Games -->
-        <div class="our-games-title-container" id="our_games">
-            <h1 class="our-games-title">
-                Our Games
-            </h1>
-            <div class="our-games-line"></div>
-        </div>
-        <div class="game-container-1st">
-            <div class="game-container-2nd">
-                <img src="asset/Project Delta.png" alt="game cover" class="game-cover">
-                <div class="game-information">
-                    <h1 class="game-title">
-                        Project Delta
-                    </h1>
-                    <p class="release-date">Release Date: Coming Soon</p>
-                    <p class="platforms-list">Platforms: Windows</p>
-                    <p class="game-desc">
-                        Project Delta is a story-driven game currently in development by The 
-                        Interastral Studio. Built with a focus on immersive gameplay and 
-                        polished design, the project aims to deliver a high-quality experience 
-                        that highlights creativity, atmosphere, and attention to detail.
-                        <br><br>
-                        Our goal with Project Delta is to push the boundaries of indie game 
-                        development by combining engaging mechanics with a strong visual and 
-                        audio identity. While still in development, the project reflects our 
-                        studio’s commitment to delivering meaningful and memorable games.
-                    </p>
+    </div>
+    <!-- Games Section End -->
+
+    <!-- Team Section Start -->
+    <div class="our-team-container" id="our-team">
+        <h2 class="our-team-title">Our Team</h2>
+        <div class="member-container">
+            <div class="member-card">
+                <i class="fa-brands fa-pushed icon"></i>
+                <h3 class="member-name">Dzaki Al</h3>
+                <p class="member-position">Founder and CEO</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/dzakial___/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.threads.net/@dzakial___"><i class="fa-brands fa-threads"></i></a>
+                </div>
+            </div>
+            <div class="member-card">
+                <i class="fa-brands fa-pushed icon"></i>
+                <h3 class="member-name">Xainnz</h3>
+                <p class="member-position">Game Tester</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/ikky07._/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.threads.net/@ikky07._"><i class="fa-brands fa-threads"></i></a>
                 </div>
             </div>
         </div>
-        <!-- our team -->
-        <div class="our-team-title-container" id="our_team">
-            <h1 class="our-team-title">
-                Our Team
-            </h1>
-            <div class="our-team-line"></div>
-        </div>
-        <div class="member-container">
-            <h1 class="member-name">Dzaki Al</h1>
-            <p class="member-position">Founder and CEO</p>
-            <p class="member-about">
-                Dzaki Al is a multidisciplinary game developer with a strong focus on programming, 3D modeling,
-                and narrative design. Driven by a lifelong passion for video games, he began his journey with a
-                simple goal, to create his own unique experiences for others to enjoy.
-                <br><br>
-                With expertise in tools like Unity and Blender, Dzaki combines technical skill with creative
-                storytelling to develop engaging, story-driven games. Whether building immersive environments or
-                crafting compelling plots, he brings both precision and imagination to every project.
-            </p>
-        </div>
-        <!-- contect -->
-        <div class="contact-title-container" id="contact">
-            <h1 class="contact-title">
-                Contact
-            </h1>
-            <div class="contact-title-line"></div>
-        </div>
-        <div class="contact-container">
-            <p>Instagram: @the_interastral_studio</p>
-            <p>Email: dzakialtoriq4@gmail.com</p>
-        </div>
     </div>
+    <!-- Team Section End -->
+
+    <!-- Footer Start -->
     <footer>
         <p>© 2025 The Interastral Studio. All rights reserved</p>
-        <div class="option-container">
-            <a href="https://www.instagram.com/the_interastral_studio/">Instagram</a>
-            <a href="mailto:dzakialtoriq4@gmail.com">Email us</a>
-        </div>
+        <a href="https://www.instagram.com/the_interastral_studio/">Instagram</a>
+        <a href="mailto:dzakialtoriq4@gmail.com">Email us</a>
     </footer>
-    <script>
-        // toggle sidebar
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('active');
-        }
-    </script>
+    <!-- Footer End -->
+
+    <script src="js/script.js"></script>
+    
 </body>
 </html>
