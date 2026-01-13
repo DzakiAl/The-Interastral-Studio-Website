@@ -141,7 +141,7 @@ nav .menu a:hover::after {
     width: 100%;
     height: 500px;
     background-color: var(--light);
-    background-image: url('../assets/Project Delta.png');
+    background-image: url('../assets/Still in Progress.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
